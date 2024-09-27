@@ -9,21 +9,8 @@ const {
  * @description Retrieve the main user info (first name, last name, today score)
  * @param {number} id
  */
-const getUserById = (id) => {
-  const userData = USER_MAIN_DATA.filter((user) => user.id === id).shift();
-
-  if (!userData) return null;
-
-  return {
-    id: userData.id,
-    firstName: userData.userInfos.firstName,
-    lastName: userData.userInfos.lastName,
-    age: userData.userInfos.age,
-    todayScore:
-      userData.todayScore !== undefined ? userData.todayScore : userData.score,
-    keyData: userData.keyData,
-  };
-};
+const getUserById = (id) =>
+  USER_MAIN_DATA.filter((user) => user.id === id).shift();
 
 /**
  * @param {number} id
