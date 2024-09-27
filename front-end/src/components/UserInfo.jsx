@@ -34,7 +34,7 @@ const UserInfo = ({ userId }) => {
   }
 
   return (
-    <div>
+    <div className="userInfo">
       <h2>
         {userData.firstName ? userData.firstName : "First Name Not Available"}
       </h2>

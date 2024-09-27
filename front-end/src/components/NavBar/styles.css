@@ -1,0 +1,23 @@
+.navBarContainer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #020203;
+    padding-right: 87px;
+    min-height: 10vh;
+}
+
+.navBarContainer button {
+    background-color: transparent;
+    border: 0 none;
+    color: white;
+    font-family: "Roboto";
+    font-size: 24px;
+}
+
+.logoNavBar {
+    width: 178Px;
+    height: 60px;
+    padding-top: 18px;
+    padding-bottom: 12px;
+    padding-left: 28px;
+}

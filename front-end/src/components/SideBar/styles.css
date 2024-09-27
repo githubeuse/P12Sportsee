@@ -1,0 +1,52 @@
+.sideBarContainer {
+    background-color: #020203;
+    width: 113px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+}
+
+
+
+.sideBarContainer button{
+    background-color: transparent;
+    border: 0 none;
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.iconButtonContainer {
+    padding-top: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 164px;
+}
+
+.iconYoga{
+    background-image: url('../../assets/iconYoga.png');
+}
+
+.iconNatation{
+    background-image: url('../../assets/iconNatation.png');
+}
+
+.iconCyclisme{
+    background-image: url('../../assets/iconCyclisme.png');
+}
+
+.iconMasse{
+    background-image: url('../../assets/iconMasse.png');
+}
+
+.copyrightContainer{
+    width: 200px;
+    font-family: "Roboto";
+    color: white;
+    font-size: 12Px;
+    transform: rotate(-90deg);
+}
