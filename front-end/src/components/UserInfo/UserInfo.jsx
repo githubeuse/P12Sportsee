@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { fetchUserData } from "../services/apiService";
-import UserMainData from "../models/userMainData";
+import { fetchUserData } from "../../services/apiService";
+import UserMainData from "../../models/userMainData";
+import "./styles.css";
 
 const UserInfo = ({ userId }) => {
   const [userData, setUserData] = useState(null);
@@ -10,10 +11,10 @@ const UserInfo = ({ userId }) => {
     const getUserData = async () => {
       try {
         const fetchedUserData = await fetchUserData(userId);
-        console.log("Raw user data:", fetchedUserData);
+        // console.log("Raw user data:", fetchedUserData);
         const data = fetchedUserData.data;
         const user = new UserMainData(data);
-        console.log("Processed user data:", user);
+        // console.log("Processed user data:", user);
         setUserData(user);
       } catch (error) {
         setError(error.message);
@@ -36,10 +37,17 @@ const UserInfo = ({ userId }) => {
   return (
     <div className="userInfo">
       <h2>
-        {userData.firstName ? userData.firstName : "First Name Not Available"}
+        Bonjour{" "}
+        <span className="redFirstName">
+          {userData.firstName ? userData.firstName : "First Name Not Available"}
+        </span>
+        <br />
+        <span className="congratsParagraph">
+          Félicitation ! Vous avez explosé vos objectifs hier 👏
+        </span>
       </h2>
-      <p>{userData.lastName ? userData.lastName : "Last Name Not Available"}</p>
-      <p>{userData.age ? userData.age : "Age Not Available"}</p>
+      {/* <p>{userData.lastName ? userData.lastName : "Last Name Not Available"}</p>
+      <p>{userData.age ? userData.age : "Age Not Available"}</p> */}
     </div>
   );
 };

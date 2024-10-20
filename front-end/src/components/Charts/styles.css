@@ -1,0 +1,35 @@
+.chartsContainer {
+    width: 100%;
+    height: 100%;
+  }
+  
+
+/* .bottomLineCharts{
+    display: flex;
+    justify-content: space-between;
+} */
+
+.bottomLineCharts {
+    display: flex;
+    align-items:first baseline;
+    justify-content: center;
+    width: 100%;
+    height: 400px; /* Assurez-vous que le conteneur a une hauteur définie */
+  }
+
+
+  .chart1{
+    background-color: red;
+  }
+
+  .chart2{
+    background-color: blue;
+  }
+
+  .chart3{
+    background-color: lightgreen;
+  }
+
+  .topLineCharts{
+    background-color: yellow;
+  }

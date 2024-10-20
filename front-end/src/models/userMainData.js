@@ -1,12 +1,12 @@
 class UserMainData {
   constructor({ id, userInfos, todayScore, score, keyData }) {
-    console.log("Constructor input:", {
-      id,
-      userInfos,
-      todayScore,
-      score,
-      keyData,
-    }); // Ajoute ce log
+    // console.log("Constructor input:", {
+    //   id,
+    //   userInfos,
+    //   todayScore,
+    //   score,
+    //   keyData,
+    // });
 
     this.id = id;
     this.firstName = userInfos?.firstName || "Unknown";

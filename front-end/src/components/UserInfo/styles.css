@@ -1,0 +1,19 @@
+.userInfo {
+    position: absolute;
+    top: 140px;
+    left: 180px;
+}
+
+.userInfo h2 {
+    font-size: 48px;
+}
+
+.redFirstName {
+    color: red;
+}
+
+.congratsParagraph {
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+}
