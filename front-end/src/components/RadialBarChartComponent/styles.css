@@ -1,0 +1,32 @@
+.chart {
+    position: relative;
+    margin: 0;
+}
+
+.chart h2 {
+    font-size: 15px;
+    margin-block: 0;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.radialBarChart{
+    padding-bottom: 30px;
+}
+
+.legendChart {
+    position : absolute;
+    top: 0;    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.percentageValue {
+    font-size: 26px;
+}
+
+.percentageText {
+    font-size: 16px;
+}

@@ -1,0 +1,14 @@
+.chartContainer {
+    padding: 0;
+}
+
+.chartContainer h2{
+    font-size: 15px;
+    color: white;
+    width: 120px;
+    padding-left: 15px;
+}
+
+.custom-tooltip{
+color: white;
+}

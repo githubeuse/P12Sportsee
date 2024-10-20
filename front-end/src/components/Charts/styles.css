@@ -2,34 +2,41 @@
     width: 100%;
     height: 100%;
   }
-  
 
-/* .bottomLineCharts{
-    display: flex;
-    justify-content: space-between;
-} */
+.topLineChart{
+  width: 100%;
+  background-color: #FBFBFB;
+  border-radius: 10px;
+  padding: 20px;
+}
 
 .bottomLineCharts {
     display: flex;
-    align-items:first baseline;
+    align-items: top;
     justify-content: center;
     width: 100%;
-    height: 400px; /* Assurez-vous que le conteneur a une hauteur définie */
+    gap: 20px;
+    margin: 50px;
   }
 
 
   .chart1{
-    background-color: red;
+    background-color: #FF0000;
+    width: 33%;
+    border-radius: 5px;
   }
 
   .chart2{
-    background-color: blue;
+    background-color: #282D30;
+    width: 33%;
+    border-radius: 5px;
+
   }
 
   .chart3{
-    background-color: lightgreen;
+    background-color: #FBFBFB;
+    width: 33%;
+    border-radius: 10px;
+
   }
 
-  .topLineCharts{
-    background-color: yellow;
-  }

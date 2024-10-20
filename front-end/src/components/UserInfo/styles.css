@@ -6,6 +6,7 @@
 
 .userInfo h2 {
     font-size: 48px;
+    margin-block : 0;
 }
 
 .redFirstName {

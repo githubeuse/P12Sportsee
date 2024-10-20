@@ -11,20 +11,8 @@ class UserPerformance {
     this.data =
       data?.map((item) => ({
         value: item.value || 0,
-        kind: item.kind || 0,
+        kind: kind[item.kind] || "unknown",
       })) || [];
-    //   this.data = this.transformData(data, kind);
-    // }
-    // transformData(data, kind) {
-    //   return data.map((item) => ({
-    //     ...item,
-    //     kind: kind[item.kind],
-    //   }));
-    // }
-
-    // getPerformanceByKind(kindName) {
-    //   return this.data.find((item) => item.kind === kindName);
-    // }
   }
 }
 export default UserPerformance;

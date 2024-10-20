@@ -1,6 +1,6 @@
 .dashboardContainer{
     position: absolute;
-    top: 300px;
+    top: 250px;
     left: 180px;
     width: 80%;
 
@@ -8,6 +8,6 @@
 
 .chartsAndSummary{
     display: grid;
-    grid-template-columns: 2.5fr 1fr;
+    grid-template-columns: 4fr 1fr;
     gap: 20px;
 }

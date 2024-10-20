@@ -1,0 +1,17 @@
+.chartContainer{
+    position: relative;
+    padding: 30px;
+}
+
+.chart{
+    position: relative;
+    padding-top: 30px;
+}
+
+.custom-legend {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+  gap: 40px;
+}
