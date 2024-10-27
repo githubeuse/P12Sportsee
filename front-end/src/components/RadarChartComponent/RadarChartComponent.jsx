@@ -48,10 +48,13 @@ const RadarChartComponent = ({ userId }) => {
 
   return (
     <div className="chartContainer">
-      <ResponsiveContainer width="100%" height={400}>
+      <ResponsiveContainer width="100%" height={300}>
         <RadarChart outerRadius={90} data={transformedData}>
           <PolarGrid gridType="polygon" radialLines={false} />
-          <PolarAngleAxis dataKey="kind" tick={{ fill: "#FFFFFF" }} />
+          <PolarAngleAxis
+            dataKey="kind"
+            tick={{ fill: "#FFFFFF", fontSize: 12 }}
+          />
           <PolarRadiusAxis angle={30} tick={false} axisLine={false} />
           <Radar
             name="Mike"

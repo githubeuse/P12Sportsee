@@ -16,7 +16,8 @@
     justify-content: center;
     width: 100%;
     gap: 20px;
-    margin: 50px;
+    margin-top: 50px;
+    margin-bottom: 60px;
   }
 
 
@@ -24,19 +25,29 @@
     background-color: #FF0000;
     width: 33%;
     border-radius: 5px;
+    height: 300px;
   }
 
   .chart2{
     background-color: #282D30;
     width: 33%;
     border-radius: 5px;
-
+height: 300px;
   }
 
   .chart3{
     background-color: #FBFBFB;
     width: 33%;
     border-radius: 10px;
-
+    height: 300px;
   }
 
+
+  @media (max-width: 1024px) {
+    .bottomLineCharts{
+      flex-direction: column;
+    }
+    .chart1, .chart2, .chart3{
+      width: 100%;
+    }
+}

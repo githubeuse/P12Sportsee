@@ -4,6 +4,9 @@
     background-color: #020203;
     padding-right: 87px;
     min-height: 10vh;
+    position: fixed;
+    z-index: 10;
+    width: 98%;
 }
 
 .navBarContainer button {
