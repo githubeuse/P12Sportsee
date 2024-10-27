@@ -8,10 +8,20 @@
     padding-top: 30px;
 }
 
+.barChartTitle{
+  color: black;
+  font-size: 15px;
+}
 .custom-legend {
   display: flex;
   justify-content: flex-end;
   padding: 0;
   margin: 0;
   gap: 40px;
+}
+
+.barchart-custom-tooltip {
+  background-color: red; 
+  color: white; 
+  padding: 10px 20px;
 }

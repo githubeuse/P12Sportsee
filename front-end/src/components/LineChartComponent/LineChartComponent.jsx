@@ -55,7 +55,7 @@ const LineChartComponent = ({ userId }) => {
   const CustomTooltip = ({ active, payload }) => {
     if (active && payload && payload.length) {
       return (
-        <div className="custom-tooltip">
+        <div className="linechart-custom-tooltip">
           <p className="label">{`${payload[0].value} min`}</p>
         </div>
       );
@@ -65,7 +65,7 @@ const LineChartComponent = ({ userId }) => {
 
   return (
     <div className="chartContainer">
-      <h2>Durée moyenne des sessions</h2>
+      <h2 className="chartTitle">Durée moyenne des sessions</h2>
       <ResponsiveContainer width="100%" height={200}>
         <LineChart
           width={730}

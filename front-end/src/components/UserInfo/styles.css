@@ -18,3 +18,10 @@
     font-size: 18px;
     font-weight: 300;
 }
+
+@media (max-width: 1024px) {
+    .userInfo {
+        top: 90px;
+        left: 120px;
+    }
+}

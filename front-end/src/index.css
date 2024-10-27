@@ -7,5 +7,18 @@ body {
 }
 
 .container{
-  height: 100%;
+  position: relative;
+}
+
+
+.rawInfos{
+  position: absolute;
+  top: 140px;
+  left: 180px;
+}
+@media (max-width: 1024px) {
+  .rawInfos {
+      top: 90px;
+      left: 120px;
+  }
 }

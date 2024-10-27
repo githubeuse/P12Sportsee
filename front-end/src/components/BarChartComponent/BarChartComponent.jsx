@@ -64,9 +64,21 @@ const BarChartComponent = ({ userId }) => {
     );
   };
 
+  const CustomTooltip = ({ active, payload }) => {
+    if (active && payload && payload.length) {
+      return (
+        <div className="barchart-custom-tooltip">
+          <p>{`${payload[0].value}kg`}</p>
+          <p>{`${payload[1].value}kcal`}</p>
+        </div>
+      );
+    }
+    return null;
+  };
+
   return (
     <div className="chartContainer">
-      <h2>Activité quotidienne</h2>
+      <h2 className="barChartTitle">Activité quotidienne</h2>
       <ResponsiveContainer
         width="100%"
         height={200}
@@ -76,7 +88,7 @@ const BarChartComponent = ({ userId }) => {
           <CartesianGrid strokeDasharray="2 2" vertical={false} />
           <XAxis dataKey="index" />
           <YAxis orientation="right" />
-          <Tooltip />
+          <Tooltip content={<CustomTooltip />} />
           <Legend
             verticalAlign="top"
             align="right"

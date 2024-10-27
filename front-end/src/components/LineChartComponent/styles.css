@@ -2,13 +2,16 @@
     padding: 0;
 }
 
-.chartContainer h2{
+.chartTitle{
     font-size: 15px;
+    padding-left: 15px;
     color: white;
     width: 120px;
-    padding-left: 15px;
 }
 
-.custom-tooltip{
-color: white;
-}
+
+.linechart-custom-tooltip {
+    background-color: white; 
+    color: black; 
+    padding: 10px 20px;
+  }

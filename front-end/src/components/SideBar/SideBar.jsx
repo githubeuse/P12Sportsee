@@ -10,7 +10,9 @@ const SideBar = () => {
         <button className="icon iconCyclisme"></button>
         <button className="icon iconMasse"></button>
       </div>
-      <div className="copyrightContainer">Copyright, SportSee 2020</div>
+      <div className="copyrightContainer">
+        <span>Copyright, SportSee 2020</span>
+      </div>
     </div>
   );
 };

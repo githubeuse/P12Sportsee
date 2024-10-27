@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { fetchUserData } from "../../services/apiService";
+import { funcGetUserData } from "../../services/apiService";
 import UserMainData from "../../models/userMainData";
 import "./styles.css";
 
@@ -10,7 +10,7 @@ const UserInfo = ({ userId }) => {
   useEffect(() => {
     const getUserData = async () => {
       try {
-        const fetchedUserData = await fetchUserData(userId);
+        const fetchedUserData = await funcGetUserData(userId);
         // console.log("Raw user data:", fetchedUserData);
         const data = fetchedUserData.data;
         const user = new UserMainData(data);

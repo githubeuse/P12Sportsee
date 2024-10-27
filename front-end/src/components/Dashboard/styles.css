@@ -11,3 +11,10 @@
     grid-template-columns: 4fr 1fr;
     gap: 20px;
 }
+
+@media (max-width: 1024px) {
+    .dashboardContainer {
+        top: 125px;
+        left: 120px;
+    }
+}
