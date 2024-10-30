@@ -3,6 +3,14 @@ import { funcGetUserData } from "../../services/apiService";
 import UserMainData from "../../models/userMainData";
 import "./styles.css";
 
+/**
+ * Composant UserInfo permet d'afficher le prénom de l'utilisateur
+ * @component
+ * @param {Object} props - propriétés du composant
+ * @param {number} props.userId - identifiant de l'utilisateur choisi
+ * @returns {JSX.Element} - retourne le composant UserInfo
+ */
+
 const UserInfo = ({ userId }) => {
   const [userData, setUserData] = useState(null);
   const [error, setError] = useState(null);
@@ -46,8 +54,6 @@ const UserInfo = ({ userId }) => {
           Félicitation ! Vous avez explosé vos objectifs hier 👏
         </span>
       </h2>
-      {/* <p>{userData.lastName ? userData.lastName : "Last Name Not Available"}</p>
-      <p>{userData.age ? userData.age : "Age Not Available"}</p> */}
     </div>
   );
 };

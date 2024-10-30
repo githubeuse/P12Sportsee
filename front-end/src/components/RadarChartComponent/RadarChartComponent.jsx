@@ -10,6 +10,14 @@ import {
   Radar,
 } from "recharts";
 
+/**
+ * Composant RadarChartComponent permet d'afficher sous la forme d'un radar les scores de l'utilisateur
+ * @component
+ * @param {Object} props - paramètres du composant
+ * @param {number} props.userId - identifiant de l'utilisateur choisi
+ * @returns {JSX.Element} - retourne le composant RadarChartComponent
+ */
+
 const RadarChartComponent = ({ userId }) => {
   const [userData, setUserData] = useState(null);
   const [error, setError] = useState(null);

@@ -5,6 +5,14 @@ import LineChartComponent from "../LineChartComponent/LineChartComponent";
 import RadarChartComponent from "../RadarChartComponent/RadarChartComponent";
 import RadialBarChartComponent from "../RadialBarChartComponent/RadialBarChartComponent";
 
+/**
+ * Composant Charts qui contient tous les charts
+ * @component
+ * @param {Object} props - propriétés du composant
+ * @param {number} props.userId - identifiant de l'utilisateur choisi
+ * @returns {JSX.Element} - retourne le composant Charts
+ */
+
 const Charts = ({ userId }) => {
   return (
     <div className="chartsContainer">

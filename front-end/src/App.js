@@ -18,6 +18,11 @@ import {
 } from "./data/mockedData"; // Importer les données de mockedData.js
 import "./index.css";
 
+/**
+ * @component
+ * @returns {JSX.Element} - Retourne les datas userMainData de façon brute pour un utilisateur donné
+ */
+
 const RawUserMainData = () => {
   const { id } = useParams();
   const userId = parseInt(id, 10);
@@ -33,6 +38,11 @@ const RawUserMainData = () => {
     </div>
   );
 };
+
+/**
+ * @component
+ * @returns {JSX.Element} - Retourne les datas userActivity de façon brute pour un utilisateur donné
+ */
 
 const RawUserActivity = () => {
   const { id } = useParams();
@@ -50,6 +60,11 @@ const RawUserActivity = () => {
   );
 };
 
+/**
+ * @component
+ * @returns {JSX.Element} - Retourne les datas userAverageSessions de façon brute pour un utilisateur donné
+ */
+
 const RawUserAverageSessions = () => {
   const { id } = useParams();
   const userId = parseInt(id, 10);
@@ -64,6 +79,11 @@ const RawUserAverageSessions = () => {
     </div>
   );
 };
+
+/**
+ * @component
+ * @returns {JSX.Element} - Retourne les datas userPerformance de façon brute pour un utilisateur donné
+ */
 
 const RawUserPerformance = () => {
   const { id } = useParams();
@@ -80,9 +100,14 @@ const RawUserPerformance = () => {
   );
 };
 
+/**
+ * Composant App qui retourne l'ensemble du site
+ * @component
+ * @returns {JSX.Element} - retourne le composant App
+ */
+
 const App = () => {
   const [selectedUserId, setSelectedUserId] = useState(null);
-
   const handleSelectUser = (userId) => {
     setSelectedUserId(userId);
   };

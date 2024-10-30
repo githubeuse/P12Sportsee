@@ -1,6 +1,12 @@
 import React from "react";
 import "./styles.css";
 
+/**
+ * Composant sidebar qui se situe sur la gauche de la page
+ * @component
+ * @returns {JSX.Element} - retourne le composant SideBar
+ */
+
 const SideBar = () => {
   return (
     <div className="sideBarContainer">

@@ -7,6 +7,14 @@ import proteinsIcon from "../../assets/protein-icon.png";
 import carbsIcon from "../../assets/carbs-icon.png";
 import lipidsIcon from "../../assets/fat-icon.png";
 
+/**
+ * Composant NutritionSummary permet d'afficher les informations nutritionnelles de l'utilisateur sur la droite sous forme de cartes
+ * @component
+ * @param {Object} props - propriétés du composant
+ * @param {number} props.userId - identifiant de l'utilisateur choisi
+ * @returns {JSX.Element} - retourne le composant NutritionSummary
+ */
+
 const NutritionSummary = ({ userId }) => {
   const [userData, setUserData] = useState(null);
   const [error, setError] = useState(null);
