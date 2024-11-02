@@ -13,8 +13,7 @@ import "./styles.css";
  *
  * Composant RadialBarChartComponent permet d'afficher le score en pourcentage atteint par l'utilisateur
  * @component
- * @param {Object} props - propriétés du composant
- * @param {number} props.userId - identifiant de l'utilisateur choisi
+ * @param {number} userId - identifiant de l'utilisateur choisi
  * @returns {JSX.Element} - retourne le composant RadialBarChartComponent
  */
 

@@ -7,8 +7,7 @@ import "./styles.css";
 /**
  * Composant LineChartComponent qui affiche la durée moyenne des sessions de l'utilisateur sous forme de graphique linéaire
  * @component
- * @param {Object} props - propriétés du composant
- * @param {number} props.userId - identifiant de l'utilisateur choisi
+ * @param {number} userId - identifiant de l'utilisateur choisi
  * @returns {JSX.Element} - retourne le composant LineChartComponent
  */
 

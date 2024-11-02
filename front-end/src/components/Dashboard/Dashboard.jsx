@@ -6,8 +6,7 @@ import "./styles.css";
 /**
  * Composant Dashboard qui contient les composants Charts et NutritionSummary
  * @component
- * @param {Object} props - propriétés du composant
- * @param {number} props.userId - identifiant de l'utilisateur choisi
+ * @param {number} userId - identifiant de l'utilisateur choisi
  * @returns {JSX.Element} - retourne le composant Dashboard
  */
 

@@ -13,8 +13,7 @@ import {
 /**
  * Composant RadarChartComponent permet d'afficher sous la forme d'un radar les scores de l'utilisateur
  * @component
- * @param {Object} props - paramètres du composant
- * @param {number} props.userId - identifiant de l'utilisateur choisi
+ * @param {number} userId - identifiant de l'utilisateur choisi
  * @returns {JSX.Element} - retourne le composant RadarChartComponent
  */
 

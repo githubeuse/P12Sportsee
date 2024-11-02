@@ -16,8 +16,7 @@ import "./styles.css";
 /**
  * Composant BarChartComponent permet d'afficher l'activité quotidienne de l'utilisateur sous forme de graphique en barres
  * @component
- * @param {Object} props - propriétés du composant
- * @param {number} props.userId - identifiant de l'utilisateur choisi
+ * @param {number} userId - identifiant de l'utilisateur choisi
  * @returns {JSX.Element} - retourne le composant BarChartComponent
  */
 
