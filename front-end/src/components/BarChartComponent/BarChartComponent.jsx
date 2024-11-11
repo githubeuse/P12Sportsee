@@ -58,10 +58,11 @@ const BarChartComponent = ({ userId }) => {
 
   const renderLegend = (props) => {
     const { payload } = props;
+    // console.log(">>>>" + JSON.stringify(payload));
     return (
       <ul className="custom-legend">
         {payload.map((entry, index) => (
-          <li key={`item-${index}`} style={{ color: entry.color }}>
+          <li key={`item-${index}`} className="li-barchart">
             {entry.value === "kilogram"
               ? "Poids (kg)"
               : "Calories brûlées (kCal)"}
@@ -119,16 +120,6 @@ const BarChartComponent = ({ userId }) => {
           />{" "}
         </BarChart>
       </ResponsiveContainer>
-
-      {/* {userData.sessions.length > 0 ? (
-        userData.sessions.map((session, index) => (
-          <p key={index}>
-            {session.day} - {session.kilogram} kg - {session.calories} kcal
-          </p>
-        ))
-      ) : (
-        <p>No sessions avalaible</p>
-      )} */}
     </div>
   );
 };

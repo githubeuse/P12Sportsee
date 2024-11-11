@@ -10,8 +10,7 @@ import lipidsIcon from "../../assets/fat-icon.png";
 /**
  * Composant NutritionSummary permet d'afficher les informations nutritionnelles de l'utilisateur sur la droite sous forme de cartes
  * @component
- * @param {Object} props - propriétés du composant
- * @param {number} props.userId - identifiant de l'utilisateur choisi
+ * @param {number} userId - identifiant de l'utilisateur choisi
  * @returns {JSX.Element} - retourne le composant NutritionSummary
  */
 

@@ -25,3 +25,8 @@
   color: white; 
   padding: 10px 20px;
 }
+
+ul li:last-child::marker {
+  color: red; /* Change uniquement la couleur du point */
+}
+  

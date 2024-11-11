@@ -30,12 +30,12 @@ export const fetchUserData = async (userId) => {
   }
 };
 
-export const fetchMockedUserData = async (userId) => {
+export const fetchMockedUserData = (userId) => {
   /**
    * Récupère les données de l'utilisateur à partir des datas mockées
    * @function fetchMockedUserData
    * @param {number} userId - identifiant de l'utilisateur
-   * @returns {Promise<Object>} - Les données mockées de l'utilisateur
+   * @returns {Object} - Les données mockées de l'utilisateur
    */
   const mockedData = userMainData.find((user) => user.userId === userId);
   return mockedData;
@@ -50,7 +50,7 @@ export const funcGetUserData = async (userId) => {
    */
   const useMockData = process.env.REACT_APP_MOCK_DATA === "true";
   return useMockData
-    ? await fetchMockedUserData(userId)
+    ? fetchMockedUserData(userId)
     : await fetchUserData(userId);
 };
 
@@ -77,12 +77,12 @@ export const fetchUserActivity = async (userId) => {
   }
 };
 
-export const fetchMockedUserActivity = async (userId) => {
+export const fetchMockedUserActivity = (userId) => {
   /**
    * Récupère les données de l'utilisateur à partir des datas mockées
    * @function fetchMockedUserActivity
    * @param {number} userId - identifiant de l'utilisateur
-   * @returns {Promise<Object>} - Les données mockées de l'utilisateur
+   * @returns {Object} - Les données mockées de l'utilisateur
    */
   const mockedData = userActivity.find((user) => user.userId === userId);
   return mockedData;
@@ -97,7 +97,7 @@ export const funcGetUserActivity = async (userId) => {
    */
   const useMockData = process.env.REACT_APP_MOCK_DATA === "true";
   return useMockData
-    ? await fetchMockedUserActivity(userId)
+    ? fetchMockedUserActivity(userId)
     : await fetchUserActivity(userId);
 };
 
@@ -126,12 +126,12 @@ export const fetchUserAverageSessions = async (userId) => {
   }
 };
 
-export const fetchMockedUserAverageSessions = async (userId) => {
+export const fetchMockedUserAverageSessions = (userId) => {
   /**
    * Récupère les données de l'utilisateur à partir des datas mockées
    * @function fetchMockedUserAverageSessions
    * @param {number} userId - identifiant de l'utilisateur
-   * @returns {Promise<Object>} - Les données mockées de l'utilisateur
+   * @returns {Object} - Les données mockées de l'utilisateur
    */
   const mockedData = userAverageSessions.find((user) => user.userId === userId);
   return mockedData;
@@ -140,7 +140,7 @@ export const fetchMockedUserAverageSessions = async (userId) => {
 export const funcGetUserAverageSessions = async (userId) => {
   const useMockData = process.Env.REACT_APP_MOCK_DATA === "true";
   return useMockData
-    ? await fetchMockedUserAverageSessions(userId)
+    ? fetchMockedUserAverageSessions(userId)
     : await fetchUserAverageSessions(userId);
 };
 
@@ -167,12 +167,12 @@ export const fetchUserPerformance = async (userId) => {
   }
 };
 
-export const fetchMockedUserPerformance = async (userId) => {
+export const fetchMockedUserPerformance = (userId) => {
   /**
    * Récupère les données de l'utilisateur à partir des datas mockées
    * @function fetchMockedUserPerformance
    * @param {number} userId - identifiant de l'utilisateur
-   * @returns {Promise<Object>} - Les données mockées de l'utilisateur
+   * @returns {Object} - Les données mockées de l'utilisateur
    */
   const mockedData = userPerformance.find((user) => user.userId === userId);
   return mockedData;
@@ -187,6 +187,6 @@ export const funcGetUserPerformance = async (userId) => {
    */
   const useMockData = process.env.REACT_APP_MOCK_DATA === "true";
   return useMockData
-    ? await fetchMockedUserActivity(userId)
+    ? fetchMockedUserActivity(userId)
     : await fetchUserPerformance(userId);
 };
